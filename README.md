@@ -1,2 +1,2 @@
 # IPWA01-01
-Repository zur Fallstudie, Programmieren von Webanwendungen 
+Repository zur Fallstudie, Programmieren von Webanwendungsoberflaechen 
