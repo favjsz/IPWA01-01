@@ -1,126 +1,145 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Titel und Logo der Webseite-->
-        <title>CO²-Footprint</title>
-        <link rel="icon" type="jpg" href="favicon.jpg" />
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titel und Logo der Webseite-->
+    <title>CO²-Footprint</title>
+    <link rel="icon" type="jpg" href="favicon.jpg" />
 
-        <!--Bootstrap einbinden-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <!--Bootstrap Icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        
-        <link rel="stylesheet" href="basic_structure/basic_structure.css">
-    </head>
-    <body>
+    <!--Bootstrap einbinden-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS-Design-File-->
+    <link rel="stylesheet" href="basic_structure/basic_structure.css">
+  </head>
+  <body>
 
-      <!-- Header und Navbar-->
-      <header>
-        <!--    
-        navbar navbar-expand-lg": Wenn Bildschirmgröße < large Display (>= 992px) Nav-Darstellung als Button, wenn Bildschirmgröße >= lg 
-        soll die Navbar erscheinen. 
-        (fw) fond-weight-bold: 
-        data-bs-target="": Festlegung welche Sektion ein- und ausgeklappt werden soll.
-        aria-controls="" aria-expanded="": Für Screenreader wird der kontrollierte Abschnitt über die Id und den Status (ob ein- oder ausgeklappt) genannt.
-        aria-label="Toggle navigation": Beschreibung, was gemacht wird.
-        -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container">
-            <a href="#content" class="navbar-brand">
-              <span class="fw-bold text-secondary">CO²-Footprint</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <!-- Header und Navbar-->
+    <header>
+      <!--    
+      navbar navbar-expand-lg": Wenn Bildschirmgröße < large Display (>= 992px) Nav-Darstellung als Button, wenn Bildschirmgröße >= lg 
+      soll die Navbar erscheinen.  
+      data-bs-target="": Festlegung welche Sektion ein- und ausgeklappt werden soll.
+      aria-controls="", aria-expanded="": Für Screenreader wird der kontrollierte Abschnitt über die Id und den Status (ob ein- oder ausgeklappt) genannt.
+      aria-label="Toggle navigation": Beschreibung, was gemacht wird.
+      -->
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <a class="navbar-brand">
+            <span class="fw-bold text-secondary">CO²-Footprint</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <!--navbar Links mit Bootstrap Icons-->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="home.html">Übersicht</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Kontakt</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.facebook.com/co2Footprint"><i class="bi bi-facebook"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.instagram.com/co2Footprint"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-translate"></i>
-                  </a>
-                  <!--Dropdown für Sprachauswahl-->
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="deutsch.html">deutsch</a></li>
-                    <li><a class="dropdown-item" href="englisch.html">englisch</a></li>
-                    <li><a class="dropdown-item" href="arabisch.html">arabisch</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <!--Suchleiste und Such-Button-->
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
+          <!--
+              navbar Links mit Bootstrap Icons
+              target="_blank" öffnet den Link in einem neuen Tab
+              Darstellung von den Links zur Sprachauswahl, Facebook und Instagram als Bootstrap Icon.
+          -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.facebook.com/co2Footprint"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.instagram.com/co2Footprint"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-translate"></i>
+                </a>
+                <!--Dropdown für Sprachauswahl-->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="deutsch.html">deutsch</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="englisch.html">englisch</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="arabisch.html">arabisch</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!--Suchleiste und Such-Button-->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
+    <!-- Container für sidebar und content-->
+    <main id="content">
+      <!--resonsives Design: Bei sehr kleiner und kleiner Bildschirmgröße sind die
+          Elemente untereinander positioniert, bei mittlerer bis sehr großer Bildschirmgröße
+          md-Aufteilung und bei sehr sehr großer Bildschrimgröße xxl-Aufteilung 
+      -->
+      <div class="container-xxl">
+        <div class="row justify-content-left">
+          <div class="col-md-3 col-xxl-3">
+            <ul id="sidebar">
+              <li>
+                <a class="Link" href="webpages/company/company.html">Übersicht</a>
+              </li>
+              <li>
+                <a class="Link" href="webpages/country/country.html">C02-Emmissionen</a>
+              </li>
+              <li>
+                <a class="Link" href="donate.html">Fürs Klima spenden</a>
+              </li>
+              <li>
+                <a class="Link" href="about.html">Über uns</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-xxl-9">
+            <section id="text">
+              <h1>Willkommen auf CO²-Footprint</h1>
+              <p>
+                  Hier können sie Informationen zu Emmissionswerten von Ländern und Unternehmen einholen.
+              </p>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Deserunt, esse eaque, non ipsa accusamus cupiditate itaque quae odit atque reiciendis rerum! 
+                  Aut perferendis placeat libero quasi quis fuga nam delectus?
+              </p>
+              <h2>Das ist eine Überschrift</h2>
+              <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Reiciendis at ipsa libero dolore, dicta unde illo minima beatae quis quibusdam incidunt nihil tempore? 
+                  Placeat repudiandae blanditiis praesentium, corporis quod facilis.
+              </p> 
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
 
-        <!-- Container für sidebar und content-->
-        <main id="content">
-            <!--resonsives Design: Bei sehr kleiner Bildschirmgröße sind die
-                Elemente untereinander positioniert, bei kleiner Bildschirmgröße
-                sm-Aufteilung, bei großer Bildschirmgröße lg-Aufteilung und bei sehr
-                großer Bildschrimgröße xxl-Aufteilung 
-            -->
-            <div class="container" style="margin: 2rem;">
-                <div class="row justify-content-center">
-                    <div class="col-sm-2 col-lg-3 col-xl-3">
-                        <div style="border:1px solid red;">
-                          <ul>
-                            <li><a href="webpages/company/company.html">Übersicht</a></li>
-                            <li><a href="webpages/country/country.html">C02-Emmissionen nach Land</a></li>
-                            <li><a href="company.html">C02-Emmissionen nach Firma</a></li>
-                            <li><a href="donate.html">Fürs Klima spenden</a></li>
-                            <li><a href="about.html">Über uns</a></li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 col-lg-9 col-xl-7">
-                        <div style="border:1px solid red;">
-                          <section div class="content">
-                            <h1>Willkommen auf CO²-Footprint</h1>
-                            <p>
-                                Hier können sie Informationen zu Emmissionswerten von Ländern und Unternehmen einholen.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Deserunt, esse eaque, non ipsa accusamus cupiditate itaque quae odit atque reiciendis rerum! 
-                                Aut perferendis placeat libero quasi quis fuga nam delectus?
-                            </p>
-                            <h2>Das ist eine Überschrift</h2>
-                            <p id="text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Reiciendis at ipsa libero dolore, dicta unde illo minima beatae quis quibusdam incidunt nihil tempore? 
-                                Placeat repudiandae blanditiis praesentium, corporis quod facilis.
-                            </p> 
-                        </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-      <!--Footer-->
-      <footer>
-        <!--Rechtliche Hinweise-->
-      </footer>
-    </body>
+    <!--Footer-->
+    <footer class="sticky-footer">
+      <!--Rechtliche Hinweise in der Mitte des Footers positioniert-->
+      <nav>
+        <div>
+            <ul class="text-center">
+                <li>
+                  <a class="Link" href="privacy.html">Datenschutz</a>
+                </li>
+                <li>
+                  <a class="Link" href="imprint.html">Impressum</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
 </html>
